@@ -1,0 +1,47 @@
+/* profile page */
+
+body{
+    background-color: whitesmoke;
+    width:100%;
+}
+
+.profile_fields{
+    
+}
+
+.profile_menu{
+  background-color: #023047;
+  height:36rem;
+ 
+}
+
+.profile_menu a{
+    color: #fff;
+    background-color: #023047;
+}
+
+.form-fields{
+    margin: 30px 0;
+}
+
+.vertical-rule{
+    border-left: 3px solid #023047;
+    height: 81%;
+   position:fixed;
+   margin-left: 81%;
+}
+
+.announcement-header{
+    padding: 1rem 4rem;
+}
+
+.announcements{
+  width:100%;
+  height:fit-content;
+  background-color: #fff;
+  margin:0 0 4% 6%;
+}
+.announcements p{
+  
+
+}

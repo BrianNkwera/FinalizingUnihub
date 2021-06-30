@@ -1,0 +1,293 @@
+/* MAIN */
+@import'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+body{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+footer{
+    background: #023047;
+    height: 4rem;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+
+nav{
+  background-color:white;
+  
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.home-button{
+   text-decoration: none;
+    display: inline-block;
+	padding: 10px 30px;
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #023047;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+
+   
+}
+
+.home-button:hover{
+    color: white;
+	background-color: #023047;
+}
+
+#home{
+ margin: 5rem 0 0 5rem;
+ height:30%;
+ width: 90%;
+ 
+}
+
+.home-container{
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    text-align: center;
+
+    
+}
+
+.felipe-img{
+    padding-bottom: 16px;
+}
+
+#item{
+    color: black;
+    font-size: 20px;
+
+}
+
+#item:hover{
+   
+   color: crimson;
+}
+
+
+
+.home-txt{
+    text-align: center;
+    margin : 4rem 0 0 0 !important;
+    color: #000;
+}
+
+.home-txt h2{
+ color: crimson;
+ font-weight: 600;
+ font-size: 1.8rem;
+
+}
+
+.home-txt h4{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+}
+
+.txtt{
+    color:crimson;
+}
+
+/*media queries*/
+@media  (max-width: 913px) and (min-width: 768px){
+
+    
+    .home-button{
+        margin-top: 0.75rem;
+        
+    }
+}
+
+@media (max-width:767.5px) and (min-width:481px){
+
+    footer{
+        height: 0;
+    }
+
+}
+
+@media (max-width:480.5px){
+    footer{
+        height: 0;
+    }
+}
+
+/* REGISTER */
+.sign{
+     width: 450px;
+     height: 650px;
+     position: relative;
+     float: right;
+     right: 120px;
+     top: 70px;
+     color: white; 
+     padding: 60px;
+     align-items: left;
+     
+}
+
+
+.input-fields{
+     background-color:  #023047;
+     border: none;
+     border-bottom: rgba(182, 182, 182, 0.842) solid 1px;
+     transition: ease .5s;
+     color: #fff;
+}
+
+.input-fields:hover{
+  
+    border-bottom: #023047 solid 1px;
+    width: 29
+}
+
+form button:hover{
+   background-color:  crimson;
+   color: white !important;
+
+}
+
+
+.register {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.signin{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width:100px;
+    text-transform: uppercase  ;
+
+}
+
+/* explore section */
+
+
+#timetable{
+	text-align: center;
+	padding: 100px 0 0 0;
+    margin: 0 4rem;
+}
+#timetable  h2{
+    color:crimson;
+    font-weight: bold;
+    
+}
+#timetable  h3{
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.4rem;
+
+}
+
+
+#timetable h5{
+    line-height: 2.1rem;
+    padding: 30px 0;
+}
+
+.timetable-txt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* announcements section */
+
+
+#announcements{
+	text-align: center;
+    margin: 0 4rem;
+}
+
+#announcements h3{
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.4rem;
+
+}
+
+
+#announcements h5{
+    line-height: 2.1rem;
+    padding: 30px 0;
+}
+
+.explore-txt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* course resources section */
+
+
+#course-resources{
+	text-align: center;
+    margin: 0 4rem;
+}
+
+#course-resources  h3{
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.2rem;
+
+}
+
+.readmore-img{
+    padding: 80px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.readmore-img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+#course-resources h5{
+    line-height: 2.1rem;
+    padding: 30px 0;
+}
+
+.explore-txt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.resource101{
+
+    margin-top: 50%;
+    margin-left: 40%
+
+
+}
+
+
+
