@@ -1,9 +1,7 @@
 <?php include"db.php"; ?>
 <?php include"includes/navbar.php"; ?>
-
 <?php
-    
- if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
    
   $username = test_input($_POST["username"]);
   $email = test_input($_POST["email"]);
@@ -16,8 +14,20 @@
   $hashString = $hash . $string;
   $password = crypt($password , $hashString);
 
+  $query = "SELECT * FROM users WHERE email='$email' ";
+  $query2 = "SELECT * FROM users WHERE  username = '$username' ";
+  $results = mysqli_query($connection , $query);
+  $results2 = mysqli_query($connection , $query2);
+  $row2 = mysqli_fetch_assoc($results2);
+  $row = mysqli_fetch_assoc($results);
 
+  if($row || $row2){
 
+    echo "Account exists log in instead";
+
+  }
+  
+  else{
 
   $query = "INSERT INTO users (username, email, programme , year, password,isAdmin)  VALUES ('$username' , '$email' , '$programme' , '$year', '$password', '0')"; 
 
@@ -32,6 +42,8 @@
   }
 
  }
+
+}
 
  function test_input($data){
      $data = trim($data);

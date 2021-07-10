@@ -1,6 +1,6 @@
 <?php
-  session_start();
-  include "../db.php";
+session_start();
+include "../db.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,7 @@
   <link href="profile.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
 
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;">
     <div class="container-fluid">
@@ -23,30 +24,29 @@
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          
+
           <li class="nav-item ms-lg-4">
             <a class="nav-link " id="item" href="../logout.php">LOG OUT</a>
 
           </li>
           <?php
-          if($_SESSION["isAdmin"]==1)
-            
-          
-         echo  "<li class=\"nav-item ms-lg-4\">
+          if ($_SESSION["isAdmin"] == 1)
+
+
+            echo  "<li class=\"nav-item ms-lg-4\">
              <a class=\"nav-link \" id=\"item\" href=\"announcements.php\">POST ANNOUNCEMENT</a> </li>
           "
           ?>
-         
+
         </ul>
       </div>
     </div>
   </nav>
- <div class="container-fluid row col-lg-12 col-sm-12 profile-body">
+  <div class="container-fluid row col-lg-12 col-sm-12 profile-body">
 
- <div class="col-lg-2 list-group profile_menu">
-<a href="#" class=" list-group-item list-group-item-action mb-3 mt-5">RESOURCES</a>
-<a href="../comments/index.php" class="b0 list-group-item list-group-item-action mb-3">TIMETABLE</a>
-<a href="#" class=" list-group-item list-group-item-action mb-3">DISCUSSION</a>
-<a href="#" class=" list-group-item list-group-item-action">PROFILE</a>
-</div>
-
+    <div class="col-lg-2 list-group profile_menu">
+      <a href="" class=" list-group-item list-group-item-action mb-3 mt-5">RESOURCES</a>
+      <a href="../comments/index.php" class="b0 list-group-item list-group-item-action mb-3">TIMETABLE</a>
+      <a href="" class=" list-group-item list-group-item-action mb-3">DISCUSSION</a>
+      <a href="./profile.php" class=" list-group-item list-group-item-action">PROFILE</a>
+    </div>
