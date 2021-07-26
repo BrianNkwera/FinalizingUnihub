@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  
   <title>UNIHUB - Register</title>
   <!-- 
         <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -14,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" href="picha/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -26,8 +25,8 @@
 <body style="font-size: 16px;;">
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"> <img src="picha/ICON.PNG" alt="" width="" height="">
-        UNIHUB</a></a>
+      <a class="navbar-brand" href="index.php"> <img src="picha/favicon0.png" alt="" width="250px" height="50px">
+        </a></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

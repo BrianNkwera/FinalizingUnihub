@@ -84,7 +84,7 @@ function test_input($data){
       <h4>SIGN IN</h4>
     </center>
 
-    <form action="login.php" method="post">
+    <form action="login.php" method="post" style="font-size:12px;" >
       <br>
       <label for="email">Email </label> <br>
       <input type="email" class="input-fields" name="email" required>

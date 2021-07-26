@@ -95,16 +95,14 @@
 
 
  <div id="register-div">
-   <div class="card  sign" style=" background-color: #023047;border-radius: 40px;">
+   <div class="card  sign" style=" background-color: #023047;border-radius: 30px;">
      <center>
        <h4>REGISTER</h4>
      </center>
  
 
-     <form action="register.php" method="post" name="form" onsubmit = return(validate());>
-
-       
-       <label for="username">Username </label> <br>
+     <form action="register.php" method="post" name="form" onsubmit = return(validate()); style="font-size:12px;">
+      <label for="username">Username </label> <br>
        <input type="text" name="username" class="input-fields" required>
        <br><br>
        <label for="email">Email </label> <br>

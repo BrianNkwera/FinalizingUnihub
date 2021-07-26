@@ -19,6 +19,9 @@ footer{
 nav{
   background-color:white;
   
+  margin-top: 0%;
+  position: sticky;
+  
 }
 
 .navbar-brand{
@@ -130,14 +133,14 @@ nav{
 
 /* REGISTER */
 .sign{
-     width: 450px;
-     height: 650px;
+     width: 350px;
+     height: 500px;
      position: relative;
      float: right;
-     right: 120px;
-     top: 70px;
+     margin-right:5%;
+     margin-top:2%;
      color: white; 
-     padding: 60px;
+     padding: 10px;
      align-items: left;
      
 }

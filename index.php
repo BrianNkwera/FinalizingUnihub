@@ -19,7 +19,7 @@
           <a href="#timetable" class="home-button mt-3" id="explore-btn" type="button" >EXPLORE</a>
           
            
-           
+      
         </div>
   
     </div>
@@ -50,9 +50,7 @@
         </div>
   
     </div>
-      
-
-    </section>
+      </section>
 
     <section id= "course-resources">
  

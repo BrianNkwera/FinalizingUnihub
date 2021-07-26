@@ -1,15 +1,16 @@
 <?php include "../db.php"; ?>
+<?php include "nav_tab.php"; ?>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $announcement = $_POST["textArea"];
   $programme = $_POST["programme"];
   $year  = $_POST["year"];
   $name = md5(rand(100, 200));
-  $ext = explode('.', $_FILES['file']['name']);
-  $filename = $name . '.' . $ext[1];
-  $destination = 'images/' . $filename; //change this directory
-  $location = $_FILES["file"]["tmp_name"];
-  move_uploaded_file($location, $destination);
+  // $ext = explode('.', $_FILES['file']['name']);
+  // $filename = $name . '.' . $ext[1];
+  // $destination = 'images/' . $filename; //change this directory
+  // $location = $_FILES["file"]["tmp_name"];
+  // move_uploaded_file($location, $destination);
   //echo 'images/' . $filename;
   $query = "INSERT INTO announcemments ( announcemment, programme, year)  VALUES ('$announcement' , '$programme' ,  '$year')";
   $insertingData = mysqli_query($connection, $query);
@@ -18,14 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Inserting data to the Db failed" . mysqli_error($connection);
   }
   
-  else {
-  
-    echo "inserted fully";
-  
-    }
+
 }
 ?>
-<html lang="en">
+<div class="col-lg-8 col-sm-12 ">
 <head>
   <meta charset="UTF-8">
   <title>without bootstrap</title>
@@ -33,8 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 </head>
-<body>
-  <form method="post" id="" action="">
+<style>
+  #annocpost{
+margin-left: 25%;
+
+  }
+</style>
+  <form method="post" id="annocpost" action="">
     <textarea name="textArea" id="summernote" cols="30" rows="10"></textarea>
     <label for="programme">Programme </label> <br> <br>
     <select name="programme" class="input-fields">
@@ -53,8 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    </select><br><br>
     <input type="submit" value="POST">
     </form>
-
-  <a href="profile.php">RUDI UKAZIONE</a>
   <script>
     $('#summernote').summernote({
       placeholder: 'enter stuffs here',
@@ -105,6 +105,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       });
     };
   </script>
-
-
-</body>
+</div>
+<?php include "./anno_tab.php";  ?>
