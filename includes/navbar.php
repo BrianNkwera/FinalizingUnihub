@@ -23,7 +23,7 @@
   </head>
 
 <body style="font-size: 16px;;">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;">
+  <nav class="navbar navbar-expand-lg navbar-light navAll" style="background-color:white;">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"> <img src="picha/favicon0.png" alt="" width="250px" height="50px">
         </a></a>

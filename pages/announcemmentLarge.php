@@ -21,19 +21,14 @@ margin-right:30%;
                 $res = mysqli_query($connection, $query);
                 
                 while ($row = mysqli_fetch_assoc($res)) {
-                    
                      $pattern = '/<img.*?\b>/i';
                      $pattern2 = '/<img.*?\b>/i';
                      $string = $row['announcemment'];
-                    
                      $final =  preg_replace($pattern, " ", $string );
-                    
                      $final2 =  preg_match($pattern2,$string ,$matches);
-                   
-                     echo  $final .$wewant
-                     ."<br>";
-                   
-                     if(preg_match($pattern2,$string ,$matches)){
+                     echo  $final 
+                      ."<br>";
+                    if(preg_match($pattern2,$string ,$matches)){
                     print_r($matches[0]);
                    
                   }
@@ -41,4 +36,4 @@ margin-right:30%;
    ?>
  </p>
 </div>
-<?php include "./anno_tab.php";  ?>
+<?php include "../pages/anno_tab.php";  ?>

@@ -9,7 +9,7 @@
                 $res = mysqli_query($connection, $query);
                 while ($row = mysqli_fetch_array($res)) {
                     $idWanted = $row['id'] ;
-                    echo "<a  href=\"announcemmentLarge.php?myid=$idWanted\" class=\"nav-link\" >
+                    echo "<a  href=\"../pages/announcemmentLarge.php?myid=$idWanted\" class=\"nav-link\" >
                     <p>" ;
                     $pattern = '/<img.*?\b>/i';
                     $string = $row['announcemment'];

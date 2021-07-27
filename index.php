@@ -1,13 +1,10 @@
 <?php include"includes/navbar.php"; ?>
-
-
-    <section id="home" >
+      <section id="home" >
       <div class="container-fluid home-container row mt-2 pt-4">
         <div class="container-fluid col-md-6">
             <img src="picha/felipe.jpg" alt="picha" height="" data-aos="fade-right" class =" felipe-img w-100 h-100">
         </div>
-  
-        <div class="col-md-6 mt-3 home-txt "  data-aos="fade-left">
+       <div class="col-md-6 mt-3 home-txt "  data-aos="fade-left">
         
           <h2> WELCOME TO UNIHUB</h2>
           <h2>MAKING LEARNING EASIER</h2> 

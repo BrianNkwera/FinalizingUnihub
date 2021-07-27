@@ -1,6 +1,7 @@
 <?php
-session_start();
 include "../db.php";
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,8 +47,8 @@ include "../db.php";
   <div class="container-fluid row col-lg-12 col-sm-12 profile-body">
 
     <div class="col-lg-2 list-group profile_menu">
-      <a href="resources.php" class=" list-group-item list-group-item-action mb-3 mt-5">RESOURCES</a>
-      <a href="../comments/index.php" class="b0 list-group-item list-group-item-action mb-3">TIMETABLE</a>
-      <a href="" class=" list-group-item list-group-item-action mb-3">DISCUSSION</a>
-      <a href="./profile.php" class=" list-group-item list-group-item-action">PROFILE</a>
+      <a href="../resources/index.php" class=" list-group-item list-group-item-action mb-3 mt-5">RESOURCES</a>
+      <a href="#" class="b0 list-group-item list-group-item-action mb-3">TIMETABLE</a>
+      <a href="#" class=" list-group-item list-group-item-action mb-3">DISCUSSION</a>
+      <a href="../pages/profile.php" class=" list-group-item list-group-item-action">PROFILE</a>
     </div>
